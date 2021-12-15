@@ -1,0 +1,20 @@
+﻿Build started 12/15/2021 9:37:16 AM.
+     1>Project "E:\Users\aab0196243\Downloads\BTS-main (1)\BTS-main\BTS\BTS\BTS.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\BTS.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>e:\users\aab0196243\downloads\bts-main (1)\bts-main\bts\bts\imp.h(3): error C2275: 'Node' : illegal use of this type as an expression
+                 e:\users\aab0196243\downloads\bts-main (1)\bts-main\bts\bts\class.h(4) : see declaration of 'Node'
+     1>e:\users\aab0196243\downloads\bts-main (1)\bts-main\bts\bts\imp.h(7): error C2061: syntax error : identifier 'data'
+     1>e:\users\aab0196243\downloads\bts-main (1)\bts-main\bts\bts\imp.h(7): error C2511: 'bool Tree::AddEL(Node *)' : overloaded member function not found in 'Tree'
+                 e:\users\aab0196243\downloads\bts-main (1)\bts-main\bts\bts\class.h(14) : see declaration of 'Tree'
+     1>e:\users\aab0196243\downloads\bts-main (1)\bts-main\bts\bts\imp.h(37): error C2059: syntax error : '}'
+     1>e:\users\aab0196243\downloads\bts-main (1)\bts-main\bts\bts\imp.h(37): error C2143: syntax error : missing ';' before '}'
+     1>e:\users\aab0196243\downloads\bts-main (1)\bts-main\bts\bts\imp.h(37): error C2059: syntax error : '}'
+     1>Done Building Project "E:\Users\aab0196243\Downloads\BTS-main (1)\BTS-main\BTS\BTS\BTS.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.31
