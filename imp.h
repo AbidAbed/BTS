@@ -47,12 +47,5 @@ bool Tree::Delete_ALL(){
 	if(!is_empty()){
 		Delete_ALL();
 	}
-	else{
-		if(size()==1)
-		root=r;
-		else{
-			AddEL(r);
-		}
-		
-	}
+	
 }

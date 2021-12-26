@@ -5,7 +5,7 @@ struct Node{
 	int data;
 	Node* left;
 	Node* right;
-	Node(int data,Node* left,Node*right){
+	Node(int data,Node* left=0,Node*right=0){
 		Node::data=data;
 		Node::left=left;
 		Node::right=right;
