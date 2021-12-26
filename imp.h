@@ -3,18 +3,16 @@
 
 bool Tree::AddEL(Node*&r,int data){
 	if(r==0)
-	root=new Node(data);
-	
-	else if(r->data==data)
-	return false;
-
-	else if(r->data<data)
-	AddEL(r->left,data);
-
-	else if(r->data>data)
-	AddEL(r->right,data);
-
-	return true;
+	{
+		r=new Node(data);
+		return true;
+	}
+	if(data<r->data)
+		return AddEL(r->left,data);
+	if(data>r->data)
+		return AddEL(r->right.data);
+	if(data==r->data)
+		return false;
 }
 
 bool Tree::AddEL(int data){
@@ -81,9 +79,10 @@ void Tree::print(){
 }
 
 void Tree::print(Node* r){
-	if(r==0)
-	return;
+	if(r!=0){
+	cout<<r->data;
 	print(r->left);
 	print(r->right);
-	cout<<r->data;
+	
+	}
 }

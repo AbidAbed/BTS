@@ -7,7 +7,7 @@ int main(){
 	tree.AddEL(3);
 	tree.AddEL(4);
 	tree.AddEL(5);
-	tree.Delete_ALL();
+	//tree.Delete_ALL();
 	tree.print();
 
 }
