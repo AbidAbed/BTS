@@ -21,4 +21,5 @@ public:
 	int is_empty();
 	Tree();
 	void operator=(Tree);
+	bool Delete_ALL();
 };
