@@ -1,7 +1,7 @@
 #include"class.h"
 
 
-bool Tree::AddEL(Node*r,int data){
+bool Tree::AddEL(Node*&r,int data){
 	if(r==0)
 	root=new Node(data);
 	
@@ -23,6 +23,9 @@ bool Tree::AddEL(int data){
 }
 
 
+////////////////////////////////////////
+
+
 
 	bool Tree::DeleteEl(int data){
 	return true;
@@ -37,9 +40,23 @@ bool Tree::AddEL(int data){
 	Tree::Tree(){
 	root=0;
 }
+
+
+////////////////////////////////////////
 bool Tree::Delete_ALL(){
+	Node*r=root;
+	return Delete_ALL(r);
+}
+
+bool Tree::Delete_ALL(Node*&r){
+	if(r==0)
+	delete r;
+		Delete_ALL(r->left);
+		Delete_ALL(r->right);
+	
 	return true;
 }
+////////////////////////////////////////
 	void Tree::operator=(Tree tree){
 	
 	Node*r=tree.root;

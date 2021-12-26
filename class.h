@@ -13,7 +13,8 @@ struct Node{
 };
 class Tree{
 	Node* root;
-	bool AddEL(Node*root,int);
+	bool AddEL(Node*&root,int);
+	bool Delete_ALL(Node*&);
 public:
 	bool AddEL(int);
 	bool DeleteEl(int);
