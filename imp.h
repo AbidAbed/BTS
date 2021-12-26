@@ -3,7 +3,7 @@
 
 bool Tree::AddEL(Node*r,int data){
 	if(r==0)
-	root->data=new Node(data);
+	root=new Node(data);
 	
 	else if(r->data==data)
 	return false;
@@ -41,10 +41,12 @@ bool Tree::Delete_ALL(){
 	return true;
 }
 	void Tree::operator=(Tree tree){
+	
+	Node*r=tree.root;
+	
 	if(!is_empty()){
 		Delete_ALL();
 	}
-	r=tree.root;
 	else{
 		if(size()==1)
 		root=r;
