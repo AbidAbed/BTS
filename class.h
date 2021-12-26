@@ -15,7 +15,9 @@ class Tree{
 	Node* root;
 	bool AddEL(Node*&root,int);
 	bool Delete_ALL(Node*&);
+	void print(Node*);
 public:
+	void print();	
 	bool AddEL(int);
 	bool DeleteEl(int);
 	int size();

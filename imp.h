@@ -30,13 +30,16 @@ bool Tree::AddEL(int data){
 	bool Tree::DeleteEl(int data){
 	return true;
 }
+/////////////////////////////////
 	int Tree::size(){
 	int result=-1;
 	return result;
 }
+/////////////////////////////////////////////
 	int Tree::is_empty(){
 	return root==0;
 }
+////////////////////////////////////////////
 	Tree::Tree(){
 	root=0;
 }
@@ -49,10 +52,13 @@ bool Tree::Delete_ALL(){
 }
 
 bool Tree::Delete_ALL(Node*&r){
-	if(r==0)
-	delete r;
+	if(r!=0){
+	
 		Delete_ALL(r->left);
 		Delete_ALL(r->right);
+		delete r;
+		r=0;
+	}
 	
 	return true;
 }
@@ -65,4 +71,19 @@ bool Tree::Delete_ALL(Node*&r){
 		Delete_ALL();
 	}
 	
+}
+
+///////////////////////////////////////////////
+
+void Tree::print(){
+	Node* r= root;
+	print(r);
+}
+
+void Tree::print(Node* r){
+	if(r==0)
+	return;
+	print(r->left);
+	print(r->right);
+	cout<<r->data;
 }
