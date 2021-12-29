@@ -10,14 +10,14 @@ bool Tree::AddEL(Node*&r,int data){
 	if(data<r->data)
 		return AddEL(r->left,data);
 	if(data>r->data)
-		return AddEL(r->right.data);
+		return AddEL(r->right,data);
 	if(data==r->data)
 		return false;
 }
 
 bool Tree::AddEL(int data){
 	Node* r=root;
-	AddEL(r,data);
+	return AddEL(r,data);
 }
 
 
